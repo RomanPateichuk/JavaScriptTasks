@@ -1,0 +1,6 @@
+@import url("normalize.css");
+@import url("reset.css"); 
+* {
+  margin: 0 auto;
+  color: red;
+}
