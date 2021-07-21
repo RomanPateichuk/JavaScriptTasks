@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon -e * app.js",
+    "sync": "browser-sync start --proxy localhost:3000 --files=**/*  --ignore=node_modules --no-ui --no-inject-changes",
+    "slider": "node public/scripts/slider.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "browser-sync": "^2.27.4"
   }
 }

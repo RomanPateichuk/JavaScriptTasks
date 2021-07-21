@@ -3,20 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <link rel="stylesheet" href="styles/main.css" />
-    <title>Учебный проект JavaScript</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <title>Слайдер</title>
   </head>
   <body>
-    <nav>
-      <h1>Учебный проект по JavaScript</h1>
-      <a href="/">Слайдер</a>
-      <a href="/calculator">Калькулятор</a>
-      <a href="/pomidoro">Таймер</a>
-      <a href="/game">Игра</a>
-      <a href="/weather">Погода</a>
-    </nav>
-    <h1>Слайдер</h1>
-    <script src="scripts/slider.js"></script>
+    <div class="wrapper">
+      <header>
+        <h1 class="text">Учебный проект по JavaScript</h1>
+        <nav>
+          <a href="/">Слайдер</a>
+          <a href="/calculator">Калькулятор</a>
+          <a href="/pomidoro">Таймер</a>
+          <a href="/game">Игра</a>
+          <a href="/weather">Погода</a>
+        </nav>
+      </header>
+      <main>
+        <h1 class="text">Слайдер</h1>
+        <div class="slider" id="slider">
+          <span class="arrow prev"></span>
+          <div class="gallery" id="gallery"></div>
+          <span class="arrow next"></span>
+          <div class="dots-wrapper" id="dots_wrapper"></div>
+        </div>
+      </main>
+      <footer class="text">&copy;&nbsp;2021 Роман Патейчук | WEBDAD</footer>
+    </div>
+    <script async src="scripts/slider.js"></script>
   </body>
 </html>
