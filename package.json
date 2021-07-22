@@ -1,0 +1,33 @@
+{
+  "name": "javascripttasks",
+  "version": "1.0.0",
+  "description": "Slider, WeatherAPI, Timer, Game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -e * app.js",
+    "sync": "browser-sync start --proxy localhost:3000 --files=**/*  --ignore=node_modules --no-ui --no-inject-changes",
+    "slider": "node public/scripts/slider.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanPateichuk/JavaScriptTasks.git"
+  },
+  "keywords": [
+    "node.js",
+    "js",
+    "webpack",
+    "css",
+    "html"
+  ],
+  "author": "Roman <ronnie.prog091@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomanPateichuk/JavaScriptTasks/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "browser-sync": "^2.27.4"
+  }
+}
