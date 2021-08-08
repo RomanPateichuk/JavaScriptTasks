@@ -3,11 +3,8 @@ body {
 }
 
 .slider {
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin: 15% 0 0 0;
 }
 
 .gallery {
@@ -121,10 +118,6 @@ body {
   .next {
     margin: 0 0 0 1%;
   }
-
-  .slider {
-    margin: 25% 0 0 0;
-  }
 }
 
 @media (max-width: 887px) {
@@ -141,10 +134,6 @@ body {
 
   .gallery {
     overflow-x: scroll;
-  }
-
-  .slider {
-    margin: 43% 0 0 0;
   }
 }
 
