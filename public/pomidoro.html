@@ -20,7 +20,31 @@
     </header>
     <main>
       <h1 class="text">Таймер</h1>
+      <div class="timer_wrapper">
+        <div id="text_button" class="text_button">
+          <input id="work" type="text" placeholder="work minutes" />
+          <input id="rest" type="text" placeholder="rest minutes" />
+        </div>
+        <p>Work</p>
+        <span class="timer" id="countdown_timer">00:00:00</span>
+        <div class="buttons">
+          <input id="timer_start" type="button" value="Старт" />
+          <input
+            id="timer_stop"
+            type="button"
+            value="Стоп"
+            disabled="disabled"
+          />
+          <input
+            id="timer_reset"
+            type="button"
+            value="Сброс"
+            disabled="disabled"
+          />
+        </div>
+      </div>
     </main>
     <footer class="text">&copy;&nbsp;2021 Роман Патейчук | WEBDAD</footer>
+    <script src="/scripts/timer.js"></script>
   </body>
 </html>
