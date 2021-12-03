@@ -1,0 +1,36 @@
+table {
+  margin: 5% auto;
+}
+
+td {
+  text-align: center;
+  border: 2px solid black;
+  width: 35px;
+  height: 35px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.bg_black,
+tr :last-child,
+tr :first-child {
+  background-color: black;
+}
+
+#face {
+  background-color: white;
+}
+
+#reset {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 1.5rem;
+  border: none;
+  border: 0.0625rem solid #fff;
+  border-radius: 3.125rem;
+  appearance: none;
+}
