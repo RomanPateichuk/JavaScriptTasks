@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ced16af9-c8fb-493b-9ef5-5227e017c93c&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <title>Погода</title>
   </head>
   <body>
@@ -20,7 +25,25 @@
     </header>
     <main>
       <h1 class="text">Погода</h1>
+      <div class="weather">
+        <input
+          id="input_city"
+          class="input"
+          type="text"
+          placeholder="Введите город"
+        />
+        <input id="search_city" class="input" type="submit" value="найти" />
+        <p><span class="city"></span></p>
+        <div id="icon" class="icon_wrapper"></div>
+        <p id="block_c"><span class="temp_c"></span>°C</p>
+        <p id="block_f"><span class="temp_f"></span>°F</p>
+        <input type="button" id="btn_f" class="btn_f" value="°F" />
+        <input type="button" id="btn_c" class="btn_c" value="°C" />
+        <p>Влажность: <span class="humidity"></span>%</p>
+        <p>Ветер: <span class="wind"></span> км/ч</p>
+      </div>
     </main>
     <footer class="text">&copy;&nbsp;2021 Роман Патейчук | WEBDAD</footer>
+    <script src="scripts/weather.js"></script>
   </body>
 </html>
